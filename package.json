@@ -1,0 +1,12 @@
+{
+  "name": "dnd-library-tools",
+  "version": "1.0.0",
+  "description": "Tools to work with D&D sourcebooks from 5etools as an AI reference library",
+  "type": "module",
+  "scripts": {
+    "list": "node src/list.js",
+    "convert": "node src/convert.js"
+  },
+  "keywords": ["dnd", "5e", "sourcebooks", "5etools"],
+  "license": "MIT"
+}
