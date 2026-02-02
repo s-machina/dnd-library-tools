@@ -7,8 +7,21 @@
     "list": "node src/list.js",
     "convert": "node src/convert.js",
     "toc": "node src/toc.js",
-    "toc:build": "node src/toc.js build ./5etools-data"
+    "toc:build": "node src/toc.js build ./5etools-data",
+    "index": "node src/index.js",
+    "index:build": "node src/index.js build ./5etools-data"
   },
-  "keywords": ["dnd", "5e", "sourcebooks", "5etools"],
-  "license": "MIT"
+  "keywords": [
+    "dnd",
+    "5e",
+    "sourcebooks",
+    "5etools"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^12.6.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["better-sqlite3"]
+  }
 }
