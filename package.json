@@ -9,7 +9,10 @@
     "toc": "node src/toc.js",
     "toc:build": "node src/toc.js build ./5etools-data",
     "index": "node src/index.js",
-    "index:build": "node src/index.js build ./5etools-data"
+    "index:build": "node src/index.js build ./5etools-data",
+    "mcp": "node src/mcp-server.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [
     "dnd",
@@ -19,9 +22,16 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
     "better-sqlite3": "^12.6.2"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["better-sqlite3"]
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "vitest": "^4.0.18"
   }
 }
