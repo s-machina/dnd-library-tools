@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "list": "node src/list.js",
-    "convert": "node src/convert.js"
+    "convert": "node src/convert.js",
+    "toc": "node src/toc.js",
+    "toc:build": "node src/toc.js build ./5etools-data"
   },
   "keywords": ["dnd", "5e", "sourcebooks", "5etools"],
   "license": "MIT"
